@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"dungeon_parts_full",
   "bboxMode":0,
-  "bbox_bottom":63,
+  "bbox_bottom":98,
   "bbox_left":0,
   "bbox_right":63,
   "bbox_top":0,
