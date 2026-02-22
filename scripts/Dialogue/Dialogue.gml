@@ -59,6 +59,6 @@ tutorial_dialog = [
 
 {
     name: "Seb",
-    msg: "Two more things, use the Spacebar to attack enemies and [2] for a speed boost. That should basically be it. Anyways, goodbye!"
+    msg: "Three more things, use the Spacebar to attack enemies, [1] for Shield Ability, and [2] for a speed boost. That should basically be it. Anyways, goodbye!"
 },
 ]
