@@ -19,3 +19,4 @@ can_dash = true;
 is_dash = false;
 can_stun = true;
 mask_index = spr_player_idle_down;
+
