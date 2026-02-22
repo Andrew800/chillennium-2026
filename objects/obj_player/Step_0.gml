@@ -112,8 +112,26 @@ if (is_dashing == false)
 	// Shield
 	if (keyboard_check(ord("1")) == true and can_shield == true and is_shield == false)
 	{
+		current_sprite = sprite_index;
 		can_shield = false;
 		alarm[1] = 300;
+        is_shielding = true;
+		if (sprite_index == spr_player_idle_right or sprite_index == spr_player_move_right or sprite_index == spr_player_atk_right)
+		{
+			sprite_index = spr_player_shield_right;
+		}
+		else if (sprite_index == spr_player_idle_left or sprite_index == spr_player_move_left or sprite_index == spr_player_atk_left)
+		{
+			sprite_index = spr_player_shield_left;
+		}
+		else if (sprite_index == spr_player_idle_down or sprite_index == spr_player_move_down or sprite_index == spr_player_atk_left)
+		{
+			sprite_index = spr_player_shield_down;
+		}
+		else if (sprite_index == spr_player_idle_up or sprite_index == spr_player_move_up or sprite_index == spr_player_atk_up)
+		{
+			sprite_index = spr_player_shield_up;
+		}
 		is_shield = true;
 	}
 

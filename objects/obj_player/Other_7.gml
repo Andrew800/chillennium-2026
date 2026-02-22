@@ -5,6 +5,12 @@ if (is_attacking == true)
 	is_attacking = false;
 }
 
+if (is_shielding == true)
+{
+	sprite_index = current_sprite;
+	is_shielding = false;
+}
+
 if (is_dashing == true)
 {
 	sprite_index = current_sprite;

@@ -14,6 +14,7 @@ dir = 0;
 
 is_attacking = false;
 can_shield = true;
+is_shielding = false;
 is_shield = false;
 can_dash = true;
 is_dashing = false;
