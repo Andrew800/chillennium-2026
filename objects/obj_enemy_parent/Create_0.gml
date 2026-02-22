@@ -2,7 +2,7 @@
 hp = 3;
 damage = 1;
 vision = 80;
-move_speed = 1;
+move_speed = 0.8;
 
 target_x = x;
 target_y = y;

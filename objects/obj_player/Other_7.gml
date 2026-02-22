@@ -1,5 +1,6 @@
 // Return to previous sprite after attack animation
-if (sprite_index == spr_player_atk_right or sprite_index == spr_player_atk_left or sprite_index == spr_player_atk_down or sprite_index == spr_player_atk_up)
+if (is_attacking = true)
 {
 	sprite_index = current_sprite;
+	is_attacking = false;
 }

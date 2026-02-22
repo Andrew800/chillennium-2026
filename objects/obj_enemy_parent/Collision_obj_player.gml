@@ -1,5 +1,5 @@
 // Take damage and kb if not in iFrame
-if (alarm[1] < 0 and (other.sprite_index == spr_player_atk_right or other.sprite_index == spr_player_atk_left or other.sprite_index == spr_player_atk_down or other.sprite_index == spr_player_atk_up))
+if (alarm[1] < 0 and other.is_attacking == true)
 {
     hp -= other.damage;
     image_blend = c_red;

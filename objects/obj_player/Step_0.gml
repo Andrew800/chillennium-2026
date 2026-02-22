@@ -3,13 +3,43 @@ if (instance_exists(obj_dialog == true))
 	exit;
 }
 
-if (sprite_index != spr_player_atk_right and sprite_index != spr_player_atk_left and sprite_index != spr_player_atk_down and sprite_index != spr_player_atk_up)
+var index = tile_get_index(tilemap_get_at_pixel(ground, x, y))
+if (index >= 24)
 {
-	// Get movement direction and move
-	var dir_x = keyboard_check(ord("D")) - keyboard_check(ord("A"));
-	var dir_y = keyboard_check(ord("S")) - keyboard_check(ord("W"));
-	move_and_collide(dir_x * move_speed, dir_y * move_speed, tilemap, undefined, undefined, undefined, move_speed, move_speed);
+	move_speed *= 0.95
+	if (move_speed <= 0.3)
+	{
+		move_speed = 0.3;
+	}
+	if (index <= 25)
+	{
+		hp -= 0.1;
+	}
+	else if (index == 26)
+	{
+		hp -= 0.15;
+	}
+	else
+	{
+		hp -= 0.2;
+	}
+}
+else
+{
+	move_speed = true_move_speed;
+}
+if (hp <= 0)
+{
+    room_restart();
+}
 
+// Get movement direction and move
+var dir_x = keyboard_check(ord("D")) - keyboard_check(ord("A"));
+var dir_y = keyboard_check(ord("S")) - keyboard_check(ord("W"));
+move_and_collide(dir_x * move_speed, dir_y * move_speed, tilemap, undefined, undefined, undefined, move_speed, move_speed);
+
+if (is_attacking == false)
+{
 	// Set moving and idle sprites
 	if (dir_x != 0 or dir_y != 0)
 	{
@@ -54,9 +84,10 @@ if (sprite_index != spr_player_atk_right and sprite_index != spr_player_atk_left
 } 
 
 // Swing sword swoosh swoosh
-if (keyboard_check_pressed(vk_space) == true)
+if (keyboard_check_released(vk_space) == true && is_attacking == false)
 {
 	current_sprite = sprite_index;
+	is_attacking = true;
 	if (sprite_index == spr_player_idle_right or sprite_index == spr_player_move_right)
 	{
 		sprite_index = spr_player_atk_right;
