@@ -11,6 +11,6 @@ if (alarm[1] >= 0)
 }
 
 // Move to target coords
-var dir_x = clamp(target_x - x, -1, 1);
-var dir_y = clamp(target_y - y, -1, 1);
+dir_x = clamp(target_x - x, -1, 1);
+dir_y = clamp(target_y - y, -1, 1);
 move_and_collide(dir_x * move_speed, dir_y * move_speed, [tilemap, obj_enemy_parent], undefined, undefined, undefined, move_speed, move_speed);

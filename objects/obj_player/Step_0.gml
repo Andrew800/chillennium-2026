@@ -34,8 +34,8 @@ if (hp <= 0)
 }
 
 // Get movement direction and move
-var dir_x = keyboard_check(ord("D")) - keyboard_check(ord("A"));
-var dir_y = keyboard_check(ord("S")) - keyboard_check(ord("W"));
+dir_x = keyboard_check(vk_right) - keyboard_check(vk_left);
+dir_y = keyboard_check(vk_down) - keyboard_check(vk_up);
 move_and_collide(dir_x * move_speed, dir_y * move_speed, tilemap, undefined, undefined, undefined, move_speed, move_speed);
 
 if (is_attacking == false)
@@ -84,7 +84,7 @@ if (is_attacking == false)
 } 
 
 // Swing sword swoosh swoosh
-if (keyboard_check_released(vk_space) == true && is_attacking == false)
+if (keyboard_check(vk_space) == true && is_attacking == false)
 {
 	current_sprite = sprite_index;
 	is_attacking = true;
@@ -104,4 +104,23 @@ if (keyboard_check_released(vk_space) == true && is_attacking == false)
 	{
 		sprite_index = spr_player_atk_up;
 	}
+}
+
+// Shield
+if (keyboard_check(ord("1")) == true and can_shield == true and is_shield == false)
+{
+	can_shield = false;
+	alarm[1] = 300;
+	is_shield = true;
+}
+
+// Dash
+if (keyboard_check(ord("2")) == true and can_dash == true and is_dash == false)
+{
+	can_dash = false;
+	alarm[2] = 300;
+	is_dash = true
+	true_move_speed *= 3;
+	move_speed = true_move_speed;
+	alarm[3] = 60;
 }
