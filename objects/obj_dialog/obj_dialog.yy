@@ -10,8 +10,8 @@
   "name":"obj_dialog",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"sebby webby",
+    "path":"folders/Objects/sebby webby.yy",
   },
   "parentObjectId":null,
   "persistent":false,

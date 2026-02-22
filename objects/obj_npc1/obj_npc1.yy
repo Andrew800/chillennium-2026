@@ -6,8 +6,8 @@
   "name":"obj_npc1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"sebby webby",
+    "path":"folders/Objects/sebby webby.yy",
   },
   "parentObjectId":{
     "name":"obj_npc_parent",
