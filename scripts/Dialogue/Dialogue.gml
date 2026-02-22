@@ -9,7 +9,7 @@ function create_dialog(_messages) {
 char_colors = {
     "Congrats": c_yellow,
     "Seb" : c_yellow,
-    "Singh" : c_aqua
+    "John" : c_aqua
 }
 
 welcome_dialog = [
@@ -19,7 +19,7 @@ welcome_dialog = [
 },
 
 {
-    name: "Singh",
+    name: "John",
     msg: "Sup"
 },
 
@@ -29,7 +29,7 @@ welcome_dialog = [
 },
 
 {
-    name: "Singh",
+    name: "John",
     msg: "(What a fucking loser....)"
 },
 
