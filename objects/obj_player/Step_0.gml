@@ -1,4 +1,4 @@
-if (instance_exists(obj_dialog == true))
+if (instance_exists(obj_dialog) == true)
 {
 	exit;
 }
@@ -36,6 +36,7 @@ if (hp <= 0)
 // Get movement direction and move
 dir_x = keyboard_check(vk_right) - keyboard_check(vk_left);
 dir_y = keyboard_check(vk_down) - keyboard_check(vk_up);
+show_debug_message(dir_x);
 move_and_collide(dir_x * move_speed, dir_y * move_speed, tilemap, undefined, undefined, undefined, move_speed, move_speed);
 
 if (is_attacking == false)
