@@ -16,6 +16,7 @@ is_attacking = false;
 can_shield = true;
 is_shield = false;
 can_dash = true;
+is_dashing = false;
 is_dash = false;
 can_stun = true;
 mask_index = spr_player_idle_down;
