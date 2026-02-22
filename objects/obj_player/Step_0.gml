@@ -15,38 +15,38 @@ if (sprite_index != spr_player_atk_right and sprite_index != spr_player_atk_left
 	{
 		if (dir_x > 0)
 		{
-			sprite_index = spr_player_walk_right;
+			sprite_index = spr_player_move_right;
 		}
 		else if (dir_x < 0)
 		{
-			sprite_index = spr_player_walk_left;
+			sprite_index = spr_player_move_left;
 		}
 		else if (dir_y > 0)
 		{
-			sprite_index = spr_player_walk_down;
+			sprite_index = spr_player_move_down;
 		}
 		else if (dir_y < 0)
 		{
-			sprite_index = spr_player_walk_up;
+			sprite_index = spr_player_move_up;
 		}
 	
 	    dir = point_direction(0, 0, dir_x, dir_y);
 	}
 	else 
 	{
-		if (sprite_index == spr_player_walk_right)
+		if (sprite_index == spr_player_move_right)
 		{
 			sprite_index = spr_player_idle_right;
 		}
-		else if (sprite_index == spr_player_walk_left)
+		else if (sprite_index == spr_player_move_left)
 		{
 			sprite_index = spr_player_idle_left;
 		}
-		else if (sprite_index = spr_player_walk_down)
+		else if (sprite_index = spr_player_move_down)
 		{
 			sprite_index = spr_player_idle_down;
 		}
-		else if (sprite_index = spr_player_walk_up)
+		else if (sprite_index = spr_player_move_up)
 		{
 			sprite_index = spr_player_idle_up;
 		}
@@ -57,19 +57,19 @@ if (sprite_index != spr_player_atk_right and sprite_index != spr_player_atk_left
 if (keyboard_check_pressed(vk_space) == true)
 {
 	current_sprite = sprite_index;
-	if (sprite_index == spr_player_idle_right or sprite_index == spr_player_walk_right)
+	if (sprite_index == spr_player_idle_right or sprite_index == spr_player_move_right)
 	{
 		sprite_index = spr_player_atk_right;
 	}
-	else if (sprite_index == spr_player_idle_left or sprite_index == spr_player_walk_left)
+	else if (sprite_index == spr_player_idle_left or sprite_index == spr_player_move_left)
 	{
 		sprite_index = spr_player_atk_left;
 	}
-	else if (sprite_index == spr_player_idle_down or sprite_index == spr_player_walk_down)
+	else if (sprite_index == spr_player_idle_down or sprite_index == spr_player_move_down)
 	{
 		sprite_index = spr_player_atk_down;
 	}
-	else if (sprite_index == spr_player_idle_up or sprite_index == spr_player_walk_up)
+	else if (sprite_index == spr_player_idle_up or sprite_index == spr_player_move_up)
 	{
 		sprite_index = spr_player_atk_up;
 	}
