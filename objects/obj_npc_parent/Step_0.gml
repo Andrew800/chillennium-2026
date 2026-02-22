@@ -1,4 +1,7 @@
-if (instance_exists(obj_dialog)) exit;
+if (instance_exists(obj_dialog) == true)
+{
+	exit;
+}
     
 if (instance_exists(obj_player) && distance_to_object(obj_player) < 8)
 {

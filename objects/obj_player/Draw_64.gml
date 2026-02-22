@@ -16,15 +16,6 @@ draw_sprite_stretched(hp_bar, 1, _dx, _dy, _health_barw, _barh);
 
 draw_text(_dx + _barw / 2, _dy + _barh / 2, "HP");
 
-// XP
-var _xp_barw = _barw * (xp / xp_require);
-_dy += _barh + 8; 
-
-draw_sprite_stretched(spr_box, 0, _dx, _dy, _barw, _barh);
-draw_sprite_stretched(xp_bar, 1, _dx, _dy, _xp_barw, _barh);
-
-draw_text(_dx + _barw / 2, _dy + _barh / 2, $"LEVEL {level}");
-
 // Reset Properties
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
