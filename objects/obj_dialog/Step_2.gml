@@ -16,6 +16,8 @@ else if (keyboard_check_pressed(input_key) == true)
     if (current_message >= array_length(messages))
     {
         instance_destroy();
+        
+        if (next_room) room_goto_next();
     }
     else
     {
