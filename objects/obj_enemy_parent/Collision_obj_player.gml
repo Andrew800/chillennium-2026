@@ -1,3 +1,5 @@
+is_attacking = true;
+
 // Take damage and kb if not in iFrame
 if (alarm[1] < 0 and other.is_attacking == true)
 {

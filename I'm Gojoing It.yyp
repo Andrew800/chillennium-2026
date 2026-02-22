@@ -59,7 +59,10 @@
     {"id":{"name":"spr_enemy1_atk_right_miss","path":"sprites/spr_enemy1_atk_right_miss/spr_enemy1_atk_right_miss.yy",},},
     {"id":{"name":"spr_enemy1_atk_right","path":"sprites/spr_enemy1_atk_right/spr_enemy1_atk_right.yy",},},
     {"id":{"name":"spr_enemy1_idle","path":"sprites/spr_enemy1_idle/spr_enemy1_idle.yy",},},
-    {"id":{"name":"spr_enemy2","path":"sprites/spr_enemy2/spr_enemy2.yy",},},
+    {"id":{"name":"spr_enemy2_atk_left","path":"sprites/spr_enemy2_atk_left/spr_enemy2_atk_left.yy",},},
+    {"id":{"name":"spr_enemy2_atk_right","path":"sprites/spr_enemy2_atk_right/spr_enemy2_atk_right.yy",},},
+    {"id":{"name":"spr_enemy2_idle_left","path":"sprites/spr_enemy2_idle_left/spr_enemy2_idle_left.yy",},},
+    {"id":{"name":"spr_enemy2_idle_right","path":"sprites/spr_enemy2_idle_right/spr_enemy2_idle_right.yy",},},
     {"id":{"name":"spr_npc1","path":"sprites/spr_npc1/spr_npc1.yy",},},
     {"id":{"name":"spr_player_atk_down","path":"sprites/spr_player_atk_down/spr_player_atk_down.yy",},},
     {"id":{"name":"spr_player_atk_left","path":"sprites/spr_player_atk_left/spr_player_atk_left.yy",},},
@@ -75,11 +78,14 @@
     {"id":{"name":"spr_player_move_up","path":"sprites/spr_player_move_up/spr_player_move_up.yy",},},
     {"id":{"name":"spr_shadow","path":"sprites/spr_shadow/spr_shadow.yy",},},
     {"id":{"name":"spr_talk","path":"sprites/spr_talk/spr_talk.yy",},},
+<<<<<<< HEAD
     {"id":{"name":"Sprite27","path":"sprites/Sprite27/Sprite27.yy",},},
     {"id":{"name":"Sprite28","path":"sprites/Sprite28/Sprite28.yy",},},
     {"id":{"name":"Sprite29","path":"sprites/Sprite29/Sprite29.yy",},},
     {"id":{"name":"Sprite30","path":"sprites/Sprite30/Sprite30.yy",},},
     {"id":{"name":"Sprite31","path":"sprites/Sprite31/Sprite31.yy",},},
+=======
+>>>>>>> 8bf00549cc38b035d10af84bc85fddb7ae5f3bdb
     {"id":{"name":"OurTiles","path":"tilesets/OurTiles/OurTiles.yy",},},
   ],
   "resourceType":"GMProject",

@@ -27,6 +27,6 @@ else
 	}
 	else
 	{
-		sprite_index = spr_enemy1_right_left;
+		sprite_index = spr_enemy1_atk_right;
 	}
 }
