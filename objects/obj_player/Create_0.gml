@@ -1,12 +1,14 @@
+// Set stats
 move_speed = 1;
-
-tilemap = layer_tilemap_get_id("Tiles_Col");
-
 hp = 10;
 hp_total = hp;
 damage = 1;
 
-facing = 0;
+// Get collision layer
+tilemap = layer_tilemap_get_id("Tiles_Walls");
+
+// Set facing direction (for attacking)
+dir = 0;
 
 level = 1;
 xp = 0;
@@ -23,7 +25,7 @@ function add_xp(_xp_to_add)
         
         hp_total += 5;
         hp = hp_total;
-        damage =+ 0.8;
+        damage += 0.8;
     }
 }
 

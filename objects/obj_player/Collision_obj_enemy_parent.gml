@@ -1,3 +1,4 @@
+// Take damage if not in iFrame; die if no hp
 if (alarm[0] < 0)
 {
     hp -= other.damage;

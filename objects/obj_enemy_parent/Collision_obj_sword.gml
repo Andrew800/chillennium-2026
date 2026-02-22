@@ -1,3 +1,4 @@
+// Take damage and kb if not in iFrame
 if (alarm[1] < 0)
 {
     hp -= other.damage;
