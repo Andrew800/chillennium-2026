@@ -11,7 +11,7 @@ draw_set_valign(fa_middle);
 // Healthbar
 var _health_barw = _barw * (hp / hp_total);
 
-draw_sprite_stretched(spr_box, 0, _dx, _dy, _barw, _barh);
+draw_sprite_stretched(hp_background, 0, _dx, _dy, _barw, _barh);
 draw_sprite_stretched(hp_bar, 1, _dx, _dy, _health_barw, _barh);
 
 draw_text(_dx + _barw / 2, _dy + _barh / 2, "HP");
